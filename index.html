@@ -7,9 +7,32 @@
     <title>Fruits Shop</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        .lato {
+            font-family: "Lato", sans-serif;
+        }
+
+        .lato-regular {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .lato-bold {
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+    </style>
+
 </head>
 
-<body>
+<body class="lato">
     <header class="max-w-5xl mx-auto">
         <nav>
             <div class="navbar my-6 text-white px-5 rounded-full bg-[#F85559]">
@@ -160,7 +183,8 @@
                     </div>
                 </div>
             </div>
-            <div class="max-w-[70%] lg:max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 lg:gap-4 md:gap-4 gap-4">
+            <div
+                class="max-w-[70%] lg:max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 lg:gap-4 md:gap-4 gap-4">
                 <div class="card bg-base-100 border-2 border-gray-400">
                     <figure class="px-8 pt-8">
                         <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
@@ -269,6 +293,60 @@
             </div>
             <div class="flex items-center justify-center">
                 <button class="btn btn-error text-white mt-10">Shop All</button>
+            </div>
+        </section>
+        <section>
+            <div class="card max-w-6xl bg-base-100 mx-auto shadow-xl image-full mb-20">
+                <figure><img src="./images/banner1.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <div class="text-center max-w-2xl mx-auto mt-20 mb-10">
+                        <h4 class="text-5xl text-white mb-5">Meet the team section</h4>
+                        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                            Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto md:gap-20 gap-10">
+                        <div class="flex items-center justify-center flex-col">
+                            <img src="./images/member1.png" alt="">
+                            <h4 class="text-lg text-white">Awlad Hossain</h4>
+                            <p class="mb-3">Fruits Expert</p>
+                            <ul class="flex items-center justify-evenly gap-5">
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-center flex-col">
+                            <img src="./images/member2.png" alt="">
+                            <h4 class="text-lg text-white">Awlad Hossain</h4>
+                            <p class="mb-3">Fruits Expert</p>
+                            <ul class="flex items-center justify-evenly gap-5">
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-center flex-col">
+                            <img src="./images/member3.png" alt="">
+                            <h4 class="text-lg text-white">Awlad Hossain</h4>
+                            <p class="mb-3">Fruits Expert</p>
+                            <ul class="flex items-center justify-evenly gap-5">
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center justify-center flex-col">
+                            <img src="./images/member4.png" alt="">
+                            <h4 class="text-lg text-white">Awlad Hossain</h4>
+                            <p class="mb-3">Fruits Expert</p>
+                            <ul class="flex items-center justify-evenly gap-5">
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

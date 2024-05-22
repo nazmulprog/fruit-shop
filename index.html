@@ -35,32 +35,41 @@
 <body class="lato">
     <header class="max-w-5xl mx-auto">
         <nav>
-            <div class="navbar my-6 text-white px-5 rounded-full bg-[#F85559]">
-                <div class="navbar-start">
-                    <ul class=" hidden lg:flex lg:gap-3">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">All Fruits</a></li>
-                    </ul>
-                    <div class="lg:hidden">
-                        <i class="fa-solid fa-bars"></i>
+            <div class="lg:hidden md:hidden flex items-center justify-between max-[80%] px-5 py-5">
+                <div class="flex items-center justify-center gap-2">
+                    <img class="w-8 h-auto" src="./images/logo.png" alt="">
+                    <h2 class="text-xl">Fruit Burst</h2>
+                </div>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="hidden lg:block md:block">
+                <div class="navbar my-6 text-white px-5 rounded-full bg-[#F85559]">
+                    <div class="navbar-start">
+                        <ul class=" hidden lg:flex lg:gap-3">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">All Fruits</a></li>
+                        </ul>
+                        <div class="lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="navbar-center">
-                    <a class="flex gap-3 font-bold text-xl">
-                        <img class="w-8 h-auto" src="./images/logo.png" alt="">
-                        Fruit Shop
-                    </a>
-                </div>
-                <div class="navbar-end">
-                    <label class="relative">
-                        <input class="outline-none text-black font-semibold border-none rounded-full px-3 py-1"
-                            type="text" placeholder="Search" />
-                        <span class="absolute right-4 top-1 text-red-600 ">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </span>
-                    </label>
+                    <div class="navbar-center">
+                        <a class="flex gap-3 font-bold text-xl">
+                            <img class="w-8 h-auto" src="./images/logo.png" alt="">
+                            Fruit Shop
+                        </a>
+                    </div>
+                    <div class="navbar-end">
+                        <label class="relative">
+                            <input class="outline-none text-black font-semibold border-none rounded-full px-3 py-1"
+                                type="text" placeholder="Search" />
+                            <span class="absolute right-4 top-1 text-red-600 ">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -132,7 +141,7 @@
                 </div>
             </div>
             <div
-                class="flex items-center justify-evenly rounded-md max-w-[700px] mx-auto shadow-lg shadow-indigo-500/40 bg-white relative left-auto bottom-20 py-4">
+                class="lg:flex md:flex items-center justify-evenly rounded-md max-w-[700px] mx-auto shadow-lg shadow-indigo-500/40 bg-white hidden md:relative  lg:relative left-auto bottom-20 py-4">
                 <div>
                     <img class="max-w-24" src="./images/fruit1.png" alt="">
                     <h4>Strawberry</h4>
@@ -200,7 +209,36 @@
                             <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" />
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-ghost text-xl text-red-400">Details</button>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn btn-ghost text-xl text-red-400"
+                                onclick="my_modal_1.showModal()">Details</button>
+                            <dialog id="my_modal_1" class="modal">
+                                <div class="modal-box">
+                                    <form method="dialog">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                    </form>
+                                    <div class="card">
+                                        <figure>
+                                            <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center">
+                                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                                            <p class="text-gray-400">Orange</p>
+                                            <div class="rating">
+                                                <input type="radio" name="rating-8" class="mask mask-star-2 bg-green-500" />
+                                                <input type="radio" name="rating-8" class="mask mask-star-2 bg-green-500" checked />
+                                                <input type="radio" name="rating-8" class="mask mask-star-2 bg-green-500" />
+                                                <input type="radio" name="rating-8" class="mask mask-star-2 bg-green-500" />
+                                                <input type="radio" name="rating-8" class="mask mask-star-2 bg-green-500" />
+                                            </div>
+                                            <div class="card-actions mt-3">
+                                                <button class="btn btn-error text-xl text-white">Buy Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -219,7 +257,36 @@
                             <input type="radio" name="rating-5" class="mask mask-star-2 bg-green-500" />
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-ghost text-xl text-red-400">Details</button>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn btn-ghost text-xl text-red-400"
+                                onclick="my_modal_2.showModal()">Details</button>
+                            <dialog id="my_modal_2" class="modal">
+                                <div class="modal-box">
+                                    <form method="dialog">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                    </form>
+                                    <div class="card">
+                                        <figure>
+                                            <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center">
+                                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                                            <p class="text-gray-400">Orange</p>
+                                            <div class="rating">
+                                                <input type="radio" name="rating-9" class="mask mask-star-2 bg-green-500" />
+                                                <input type="radio" name="rating-9" class="mask mask-star-2 bg-green-500" checked />
+                                                <input type="radio" name="rating-9" class="mask mask-star-2 bg-green-500" />
+                                                <input type="radio" name="rating-9" class="mask mask-star-2 bg-green-500" />
+                                                <input type="radio" name="rating-8" class="mask mask-star-2 bg-green-500" />
+                                            </div>
+                                            <div class="card-actions mt-3">
+                                                <button class="btn btn-error text-xl text-white">Buy Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -238,7 +305,36 @@
                             <input type="radio" name="rating-6" class="mask mask-star-2 bg-green-500" />
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-ghost text-xl text-red-400">Details</button>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn btn-ghost text-xl text-red-400"
+                                onclick="my_modal_3.showModal()">Details</button>
+                            <dialog id="my_modal_3" class="modal">
+                                <div class="modal-box">
+                                    <form method="dialog">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                    </form>
+                                    <div class="card">
+                                        <figure>
+                                            <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center">
+                                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                                            <p class="text-gray-400">Orange</p>
+                                            <div class="rating">
+                                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-green-500" />
+                                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-green-500" checked />
+                                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-green-500" />
+                                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-green-500" />
+                                                <input type="radio" name="rating-10" class="mask mask-star-2 bg-green-500" />
+                                            </div>
+                                            <div class="card-actions mt-3">
+                                                <button class="btn btn-error text-xl text-white">Buy Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -257,7 +353,36 @@
                             <input type="radio" name="rating-7" class="mask mask-star-2 bg-green-500" />
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-ghost text-xl text-red-400">Details</button>
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn btn-ghost text-xl text-red-400"
+                                onclick="my_modal_4.showModal()">Details</button>
+                            <dialog id="my_modal_4" class="modal">
+                                <div class="modal-box">
+                                    <form method="dialog">
+                                        <button
+                                            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                    </form>
+                                    <div class="card">
+                                        <figure>
+                                            <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <div class="card-body items-center text-center">
+                                            <h2 class="card-title">12.90$ - 18.85$</h2>
+                                            <p class="text-gray-400">Orange</p>
+                                            <div class="rating">
+                                                <input type="radio" name="rating-11" class="mask mask-star-2 bg-green-500" />
+                                                <input type="radio" name="rating-11" class="mask mask-star-2 bg-green-500" checked />
+                                                <input type="radio" name="rating-11" class="mask mask-star-2 bg-green-500" />
+                                                <input type="radio" name="rating-11" class="mask mask-star-2 bg-green-500" />
+                                                <input type="radio" name="rating-11" class="mask mask-star-2 bg-green-500" />
+                                            </div>
+                                            <div class="card-actions mt-3">
+                                                <button class="btn btn-error text-xl text-white">Buy Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -328,7 +453,8 @@
             </div>
             <div class="flex flex-col gap-5 md:flex-col lg:flex-row mx-auto">
                 <div class="lg:order-none order-2">
-                    <div class="flex flex-col lg:max-w-5xl max-w-64 lg:mx-0 mx-auto lg:flex-row lg:items-start items-center justify-center gap-4 mb-10">
+                    <div
+                        class="flex flex-col lg:max-w-5xl max-w-64 lg:mx-0 mx-auto lg:flex-row lg:items-start items-center justify-center gap-4 mb-10">
                         <div class="bg-gray-200 p-4 rounded-full text-xl">
                             <i class="fa-solid fa-users-line"></i>
                         </div>
@@ -338,7 +464,8 @@
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
-                    <div class="flex flex-col lg:max-w-5xl max-w-64 lg:mx-0 mx-auto lg:flex-row lg:items-start items-center justify-center gap-4 mb-10">
+                    <div
+                        class="flex flex-col lg:max-w-5xl max-w-64 lg:mx-0 mx-auto lg:flex-row lg:items-start items-center justify-center gap-4 mb-10">
                         <div class="bg-gray-200 p-4 rounded-full text-xl">
                             <i class="fa-regular fa-heart"></i>
                         </div>
@@ -348,7 +475,8 @@
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
-                    <div class="flex flex-col lg:max-w-5xl max-w-64 lg:mx-0 mx-auto lg:flex-row lg:items-start items-center justify-center gap-4 mb-10">
+                    <div
+                        class="flex flex-col lg:max-w-5xl max-w-64 lg:mx-0 mx-auto lg:flex-row lg:items-start items-center justify-center gap-4 mb-10">
                         <div class="bg-gray-200 p-4 rounded-full text-xl">
                             <i class="fa-solid fa-gift"></i>
                         </div>
@@ -363,7 +491,8 @@
                     <img class="max-w-64 mx-auto lg:h-auto lg:max-w-[600px]" src="./images/whychoose1.png" alt="">
                 </div>
                 <div class="lg:order-none order-3">
-                    <div class="flex items-center flex-col lg:max-w-5xl max-w-64 mx-auto lg:items-start lg:flex-row-reverse lg:text-end  text-center gap-4 mb-10">
+                    <div
+                        class="flex items-center flex-col lg:max-w-5xl max-w-64 mx-auto lg:items-start lg:flex-row-reverse lg:text-end  text-center gap-4 mb-10">
                         <div class="bg-gray-200 p-4 rounded-full text-xl">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </div>
@@ -373,7 +502,8 @@
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
-                    <div class="flex items-center flex-col lg:max-w-5xl max-w-64 mx-auto lg:items-start lg:flex-row-reverse lg:text-end  text-center gap-4 mb-10">
+                    <div
+                        class="flex items-center flex-col lg:max-w-5xl max-w-64 mx-auto lg:items-start lg:flex-row-reverse lg:text-end  text-center gap-4 mb-10">
                         <div class="bg-gray-200 p-4 rounded-full text-xl">
                             <i class="fa-solid fa-ice-cream"></i>
                         </div>
@@ -383,7 +513,8 @@
                             <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
-                    <div class="flex items-center flex-col lg:max-w-5xl max-w-64 mx-auto lg:items-start lg:flex-row-reverse lg:text-end  text-center gap-4 mb-10">
+                    <div
+                        class="flex items-center flex-col lg:max-w-5xl max-w-64 mx-auto lg:items-start lg:flex-row-reverse lg:text-end  text-center gap-4 mb-10">
                         <div class="bg-gray-200 p-4 rounded-full text-xl">
                             <i class="fa-solid fa-thumbs-up"></i>
                         </div>
